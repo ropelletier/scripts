@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#curl -o- https://raw.githubusercontent.com/ropelletier/scripts/main/install_docker | bash -x
+#apt update & apt install curl -y & curl -o- https://raw.githubusercontent.com/ropelletier/scripts/main/install_docker | bash -x
 
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
